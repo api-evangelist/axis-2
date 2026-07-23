@@ -1,7 +1,25 @@
 aid: axis-2
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/axis-2.png
 name: Axis 2
-description: Axis 2 is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Axis (axis.xyz) is a Y Combinator-backed (W2022) knowledge base platform
+  for corporate affairs, government relations, and compliance teams that helps large
+  companies understand their markets and regulatory obligations across the world.
+  The platform delivers regulatory intelligence for international expansion - which
+  laws to comply with and which officials to seek approvals from - spanning 40+ countries
+  and 200+ industries across Europe, the Middle East, and Africa. This is a product
+  SaaS company; as of this enrichment pass it publishes no public developer API,
+  OpenAPI specification, SDKs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/axis-2/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Regulatory Intelligence
+- Compliance
+- Corporate Affairs
+- Government Relations
+- Knowledge Base
+- GRC
 apis: []
+common:
+- type: DomainSecurity
+  url: security/axis-2-domain-security.yml
+- type: Website
+  url: https://axis.xyz
+  name: Axis Website
+- type: Login
+  url: https://app.axis.xyz/login
+  name: Axis App Login
+- type: ChangeLog
+  url: https://axisxyz.notion.site/Releases-41f89639131a4d50a4e9fac8b1314e02
+  name: Axis Releases
+- type: Support
+  url: https://cal.com/algergawi/axis-intro
+  name: Request a Demo
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
