@@ -40,7 +40,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 tags:
 - Company
 - Regulatory Intelligence
@@ -51,6 +51,8 @@ tags:
 - GRC
 apis: []
 common:
+- url: https://www.axis.xyz/blog
+  type: Blog
 - type: DomainSecurity
   url: security/axis-2-domain-security.yml
 - type: Website
